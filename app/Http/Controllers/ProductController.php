@@ -8,8 +8,25 @@ use App\Models\Product;
 class ProductController extends Controller
 {
     /**
-     * @param Request $request
-     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     * @OA\Get(
+     *      path="/product",
+     *      operationId="getProductList",
+     *      tags={"Product"},
+     *      summary="Get list of product",
+     *      description="Returns list of products",
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *       ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthenticated",
+     *      ),
+     *      @OA\Response(
+     *          response=403,
+     *          description="Forbidden"
+     *      )
+     *     )
      */
     public function index(Request $request)
     {

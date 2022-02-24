@@ -1,5 +1,8 @@
 [![CI](https://github.com/Zalfrie/prospark-backend/actions/workflows/laravel.yml/badge.svg)](https://github.com/Zalfrie/prospark-backend/actions/workflows/laravel.yml)
 
+API Documentation : 
+- http://yourdoaminname/api/documentation
+
 How to run :
 - pull this repo
 - open in IDE
