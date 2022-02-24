@@ -12,7 +12,7 @@ class ProductTest extends TestCase
 
     public function test_can_create_product()
     {
-        $response = $this->get('/api/product');
+        $response = $this->get('/api/v1/product');
 
         $response->assertStatus(200);
     }
